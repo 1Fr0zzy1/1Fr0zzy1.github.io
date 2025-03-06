@@ -106,34 +106,7 @@
                         inset 0 0 20px rgba(147, 112, 219, 0.3);
             animation: modalSlide 0.5s ease;
             z-index: 1001;
-        }
-
-        .channels-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .channel-button {
-            background: linear-gradient(45deg, #9370DB, #8A2BE2);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 15px;
-            text-decoration: none;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 15px rgba(147, 112, 219, 0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .channel-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 25px rgba(147, 112, 219, 0.5);
-        }
+       
 
         .modal-title {
             color: #fff;
@@ -185,8 +158,7 @@
         const channelsGrid = document.querySelector('.channels-grid');
         
         const channels = [
-            'https://t.me/m5stick_loni2',
-            'https://t.me/+QFjtYcgb7J9jYTJi'
+
         ];
         
 
@@ -208,7 +180,7 @@
         }
 
         
-        createChannelButtons();
+       
         image.addEventListener("click", function() {
             audio.play();
         });
